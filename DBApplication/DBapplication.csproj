@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC8232D5-B804-4766-8840-C88C50EAD01E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBapplication</RootNamespace>
+    <AssemblyName>DBapplication</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin Dashboard\AddLocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\AddLocationForm.Designer.cs">
+      <DependentUpon>AddLocationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\AdminDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\AdminDashboardForm.Designer.cs">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty Dashboard\AttendanceTrackerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty Dashboard\AttendanceTrackerForm.Designer.cs">
+      <DependentUpon>AttendanceTrackerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\DetailedReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\DetailedReportsForm.Designer.cs">
+      <DependentUpon>DetailedReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\ReportsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\ReportsForm.Designer.cs">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\AvailableClubsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\AvailableClubsForm.Designer.cs">
+      <DependentUpon>AvailableClubsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\AvailableSpaces.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\AvailableSpaces.Designer.cs">
+      <DependentUpon>AvailableSpaces.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\changepassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\changepassword.Designer.cs">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty Dashboard\ClubDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty Dashboard\ClubDetailsForm.Designer.cs">
+      <DependentUpon>ClubDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\ClubMembershipStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\ClubMembershipStatusForm.Designer.cs">
+      <DependentUpon>ClubMembershipStatusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Controller.cs" />
+    <Compile Include="Admin Dashboard\ControllerAdmin.cs" />
+    <Compile Include="Admin Dashboard\CreateAdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\CreateAdminForm.Designer.cs">
+      <DependentUpon>CreateAdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\CreateClubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\CreateClubForm.Designer.cs">
+      <DependentUpon>CreateClubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\CreateEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\CreateEventForm.Designer.cs">
+      <DependentUpon>CreateEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBManager.cs" />
+    <Compile Include="Admin Dashboard\EditClubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\EditClubForm.Designer.cs">
+      <DependentUpon>EditClubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\EditEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\EditEventForm.Designer.cs">
+      <DependentUpon>EditEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\EditLocationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\EditLocationsForm.Designer.cs">
+      <DependentUpon>EditLocationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\EventRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\EventRegister.Designer.cs">
+      <DependentUpon>EventRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty Dashboard\FacultyMemberController.cs" />
+    <Compile Include="Faculty Dashboard\FacultyMemberDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty Dashboard\FacultyMemberDashboardForm.Designer.cs">
+      <DependentUpon>FacultyMemberDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty Dashboard\FacultyViewFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty Dashboard\FacultyViewFeedback.Designer.cs">
+      <DependentUpon>FacultyViewFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\GiveFeedbackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\GiveFeedbackForm.Designer.cs">
+      <DependentUpon>GiveFeedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\ManageClubsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\ManageClubsForm.Designer.cs">
+      <DependentUpon>ManageClubsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\ManageEventsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\ManageEventsForm.Designer.cs">
+      <DependentUpon>ManageEventsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\ManageLocationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\ManageLocationsForm.Designer.cs">
+      <DependentUpon>ManageLocationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\ManageMembershipRequestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\ManageMembershipRequestsForm.Designer.cs">
+      <DependentUpon>ManageMembershipRequestsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student Dashboard\RegisteredEventsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\RegisteredEventsForm.Designer.cs">
+      <DependentUpon>RegisteredEventsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\ReservationHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\ReservationHistoryForm.Designer.cs">
+      <DependentUpon>ReservationHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\ReserveLocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\ReserveLocationForm.Designer.cs">
+      <DependentUpon>ReserveLocationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\Signup.Designer.cs">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\ReportsController.cs" />
+    <Compile Include="Student Dashboard\StudentController.cs" />
+    <Compile Include="Student Dashboard\StudentDashboardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\StudentDashboardForm.Designer.cs">
+      <DependentUpon>StudentDashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\StudentViewFeedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\StudentViewFeedback.Designer.cs">
+      <DependentUpon>StudentViewFeedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\StudentViewAttendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\StudentViewAttendance.Designer.cs">
+      <DependentUpon>StudentViewAttendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty Dashboard\Taking Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty Dashboard\Taking Attendance.Designer.cs">
+      <DependentUpon>Taking Attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student Dashboard\UpcomingEventsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Dashboard\UpcomingEventsForm.Designer.cs">
+      <DependentUpon>UpcomingEventsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\userprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\userprofile.Designer.cs">
+      <DependentUpon>userprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Dashboard\ViewUsersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Dashboard\ViewUsersForm.Designer.cs">
+      <DependentUpon>ViewUsersForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin Dashboard\AddLocationForm.resx">
+      <DependentUpon>AddLocationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\AdminDashboardForm.resx">
+      <DependentUpon>AdminDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty Dashboard\AttendanceTrackerForm.resx">
+      <DependentUpon>AttendanceTrackerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\DetailedReportsForm.resx">
+      <DependentUpon>DetailedReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\ReportsForm.resx">
+      <DependentUpon>ReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\AvailableClubsForm.resx">
+      <DependentUpon>AvailableClubsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\AvailableSpaces.resx">
+      <DependentUpon>AvailableSpaces.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\changepassword.resx">
+      <DependentUpon>changepassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty Dashboard\ClubDetailsForm.resx">
+      <DependentUpon>ClubDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\ClubMembershipStatusForm.resx">
+      <DependentUpon>ClubMembershipStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\CreateAdminForm.resx">
+      <DependentUpon>CreateAdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\CreateClubForm.resx">
+      <DependentUpon>CreateClubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\CreateEventForm.resx">
+      <DependentUpon>CreateEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\EditClubForm.resx">
+      <DependentUpon>EditClubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\EditEventForm.resx">
+      <DependentUpon>EditEventForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\EditLocationsForm.resx">
+      <DependentUpon>EditLocationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\EventRegister.resx">
+      <DependentUpon>EventRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty Dashboard\FacultyMemberDashboardForm.resx">
+      <DependentUpon>FacultyMemberDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty Dashboard\FacultyViewFeedback.resx">
+      <DependentUpon>FacultyViewFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\GiveFeedbackForm.resx">
+      <DependentUpon>GiveFeedbackForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\ManageClubsForm.resx">
+      <DependentUpon>ManageClubsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\ManageEventsForm.resx">
+      <DependentUpon>ManageEventsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\ManageLocationsForm.resx">
+      <DependentUpon>ManageLocationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\ManageMembershipRequestsForm.resx">
+      <DependentUpon>ManageMembershipRequestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Student Dashboard\RegisteredEventsForm.resx">
+      <DependentUpon>RegisteredEventsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\ReservationHistoryForm.resx">
+      <DependentUpon>ReservationHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\ReserveLocationForm.resx">
+      <DependentUpon>ReserveLocationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\Signup.resx">
+      <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\StudentDashboardForm.resx">
+      <DependentUpon>StudentDashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\StudentViewFeedback.resx">
+      <DependentUpon>StudentViewFeedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\StudentViewAttendance.resx">
+      <DependentUpon>StudentViewAttendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty Dashboard\Taking Attendance.resx">
+      <DependentUpon>Taking Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student Dashboard\UpcomingEventsForm.resx">
+      <DependentUpon>UpcomingEventsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\userprofile.resx">
+      <DependentUpon>userprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Dashboard\ViewUsersForm.resx">
+      <DependentUpon>ViewUsersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
